@@ -3240,7 +3240,6 @@ html[dir="rtl"] .faq_accordion-item .trigger {
   line-height: inherit;
   padding: 17px 20px;
   border: 1px solid #a9a9a9;
-  margin-bottom: 30px;
   color: #202c38;
   -webkit-transition: 0.3s ease-in-out;
   -o-transition: 0.3s ease-in-out;
@@ -3788,6 +3787,14 @@ html[dir="rtl"] .footer_main-block_nav .list-item .link .icon {
   margin-top: 1rem !important;
 }
 
-.error {
+.input-group-itms.error {
   color: red;
+  line-height: 1.5rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.input-group-itms {
+  position: relative;
 }
