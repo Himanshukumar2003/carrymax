@@ -3799,14 +3799,14 @@ html[dir="rtl"] .footer_main-block_nav .list-item .link .icon {
   position: relative;
 }
 
-.input-grop-sec {
+.input-group-section {
   position: relative;
   margin-bottom: 20px;
 }
 
 
 @media (max-width: 768px) {
-  .input-grop-sec {
+  .input-group-section {
     width: 100% !important;
     margin-bottom: 0px;
 
