@@ -97,37 +97,43 @@
   <main>
     <section class="contact section">
       <div class=container>
-        <div class=main>
+        <div class="main mb-2">
           <div class="contact_header section_header"><span class=subtitle>Contact us</span>
             <h2 class=title>Get <span class=highlight>In Touch</span></h2>
             <p class=text><b>We’re Here to Elevate Your Experience!</b><br> Have questions or need assistance? Reach
               out to our team today</p>
           </div>
 
-          <form class="contact_form contact-form d-flex flex-wrap justify-content-between" name="feedbackForm"
-            data-type="feedback" onsubmit="return validateForm()">
 
-            <div class="d-flex flex-column gap-2  contact-form_field--half input-group-itms">
-              <div id="nameError" class="error"></div>
 
-              <input class="contact-form_field field required " name="feedbackName" id="feedbackName" type="text"
-                placeholder="Full name">
+
+          <form action="https://html.merku.love/axial/form.php"
+            class="contact_form-form contact-form d-flex flex-wrap justify-content-between" method="POST"
+            name="feedbackForm" data-type="feedback">
+
+            <div class=" d-flex flex-column contact-form_field--half input-grop-sec ">
+              <span class="error-msg name-error"></span>
+
+              <input class="contact-form_field  field required" name="feedbackName" id="feedbackName" type="text"
+                placeholder="Full name" />
             </div>
 
-            <div class="d-flex flex-column gap-2 contact-form_field--half  input-group-itms">
-              <div id="phoneError" class="error"></div>
-              <input class="contact-form_field field required" data-type="tel" type="text" name="feedbackTel"
-                id="feedbackTel" placeholder="Phone">
+            <div class=" d-flex flex-column contact-form_field--half input-grop-sec">
+              <span class="error-msg phone-error"></span>
+
+              <input class="contact-form_field  field required" data-type="tel" type="text" name="feedbackTel"
+                id="feedbackTel" placeholder="Phone" />
             </div>
 
-            <div class="d-flex flex-column gap-2 w-100  input-group-itms">
-              <div id="emailError" class="error"></div>
+            <div class="d-flex flex-column w-100 input-grop-sec">
+              <span class="error-msg email-error"></span>
+
               <input class="contact-form_field field required" data-type="email" type="text" name="feedbackEmail"
-                id="feedbackEmail" placeholder="Email Address">
+                id="feedbackEmail" placeholder="Email Address" />
             </div>
 
-            <div class="d-flex flex-column gap-2 w-100  input-group">
-              <div id="messageError" class="error"></div>
+            <div class="input-group  d-flex flex-column">
+              <span class="error-msg message-error"></span>
 
               <textarea class="contact-form_field field required" data-type="message" name="feedbackMessage"
                 id="feedbackMessage" placeholder="Message"></textarea>
@@ -135,6 +141,10 @@
 
             <button type="submit" class="contact-form_btn btn">Send message</button>
           </form>
+
+
+
+
 
 
         </div>
@@ -228,7 +238,6 @@
   <script src=js/map.min.js></script>
   <script async src="https://www.googletagmanager.com/gtag/js?id=undefined"></script>
   <script src=js/index.js></script>
-  <script src="js/contect.js"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag() { dataLayer.push(arguments); }
